@@ -2,11 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>davidobrant.github.io</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module"></script>
+    <title>MM-004</title>
 </head>
 <body>
-    <h1>David Obrant</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quo quam, quas, adipisci animi provident totam laboriosam iusto accusantium consequuntur nemo corporis omnis cumque libero.</p>
+    <nav>
+        <h1 class="logo">M|M004</h1>
+        <div class="navbar">
+            <button class="menu-all-buttons" data-menu-all-buttons>Menu</button>
+        </div>
+    </nav>
+    <main>
+        <section class="menu-top menu" data-menu-top>
+            <div class="custom-text">
+                <div class="custom-text-containers">
+                    <p class="custom-text-text" data-H-text></p>
+                    <span class="custom-text-span">H</span>
+                </div>
+                <div class="custom-text-containers">
+                    <p class="custom-text-text" data-S-text><span>%</span></p>
+                    <span class="custom-text-span">S</span>
+                </div>
+                <div class="custom-text-containers">
+                    <p class="custom-text-text" data-L-text><span>%</span></p>
+                    <span class="custom-text-span">L</span>
+                </div>
+                <div class="custom-text-containers">
+                    <p class="custom-text-text" data-A-text><span>%</span></p>
+                    <span class="custom-text-span">A</span>
+                </div>
+            </div>
+            <div class="custom-color-preview">
+                <div class="preview"></div>
+            </div>
+            <div class="custom-color">
+                <div class="ranges">
+                    <label for="H">hue</label>
+                    <input type="range" max="360" data-range-H name="H" id="H">
+                    <div class="ranges-sub">
+                        <div class="S">
+                            <input type="range" data-range-S name="S" id="S">
+                            <label for="S">saturation</label>
+                        </div>
+                        <div class="L">
+                            <input type="range" data-range-L name="L" id="L">
+                            <label for="L">lightness</label>
+                        </div>
+                        <div class="A">  
+                            <input type="range" data-range-A name="A" id="A">
+                            <label for="A">opacity</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="changes">
+                <div class="mandala-background">
+                    <button data-set-mandala-background-button>background</button>
+                </div>
+            </div>
+            <div class="darkmode-container">
+                <button data-darkmode-button>lightmode</button>
+            </div>
+        </section>
+        <div class="center">
+            <section class="menu-left menu" data-menu-left>
+                <div class="origo-title">
+                    <p>Origo</p>
+                </div>
+                <ul class="ring-list origo-list" data-menu-left-list>
+                </ul>
+                    <div class="list-halo">
+                        <div class="halo-title">
+                            <p>Halo</p>
+                        </div>
+                    </div>
+                    <ul class="ring-list halo-list" data-menu-left-list-halo></ul>
+                    <div class="halo-radius">
+                        <label for="halo-radius">radius</label>
+                        <input data-halo-radius-range type="range" name="halo-radius" id="halo-radius" min="0" max="400" step="10">
+                    </div>
+                    <div class="halo-orbitals">
+                        <label for="halo-orbitals">orbitals</label>
+                        <input data-halo-orbitals-range type="range" name="halo-radius" id="halo-radius" min="0" max="50" step="1">
+                    </div>
+            </section>
+            <div class="container">
+                <div class="zoom-lens">
+                    <div class="view">
+                        <div class="mandala" data-mandala></div>
+                    </div>
+                </div>
+            </div>
+            <section class="menu-right menu" data-menu-right>
+                <div class="zoom">
+                    <label for="zoom-range">zoom <span class="zoom-range-span"></span></label>
+                    <input min="0" max="2" step=".1" type="range" name="zoom-range" id="zoom-range">
+                </div>
+                <div class="transform">
+                    <div class="rotateX">
+                        <label for="rotateX">rotateX <span></span></label>
+                        <input type="range" name="rotateX" id="rotateX" min="-360" max="360">
+                    </div>
+                    <div class="rotateY">
+                        <label for="rotateY">rotateY <span></span></label>
+                        <input type="range" name="rotateY" id="rotateY" min="-360" max="360">
+                    </div>
+                    <div class="rotateZ">
+                        <label for="rotateZ">rotateZ <span></span></label>
+                        <input type="range" name="rotateZ" id="rotateZ" min="-360" max="360">
+                    </div>
+                    <div class="translateX">
+                        <label for="translateX">translateX <span></span></label>
+                        <input type="range" name="translateX" id="translateX" min="-1000" max="1000">
+                    </div>
+                    <div class="translateY">
+                        <label for="translateY">translateY <span></span></label>
+                        <input type="range" name="translateY" id="translateY" min="-1000" max="1000">
+                    </div>
+                    <div class="translateZ">
+                        <label for="translateZ">translateZ <span></span></label>
+                        <input type="range" name="translateZ" id="translateZ" min="-1000" max="1000">
+                    </div>
+                    <div class="transform-reset">
+                        <button data-transform-reset-button>Reset</button>
+                    </div>
+                </div>
+                <div class="animation-rotate">
+                    <button data-animation-rotate-button>Rotate360</button>
+                </div>
+            </section>
+        </div>
+        <section class="menu-bottom menu" data-menu-bottom>
+            <div class="reset-mandala">
+                <button data-mandala-reset-button>Reset Mandala</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Magic | Mandala</p>
+    </footer>
 </body>
 </html>
