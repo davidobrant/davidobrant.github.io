@@ -1,0 +1,130 @@
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----- Text ----- */
+.custom-text {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom-text-containers {
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+}
+
+.custom-text-containers span {
+    font-size: .7rem;
+    text-align: center;
+}
+
+/* ----- Preview -----*/
+.custom-color-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    border-left: 1px dotted var(--border-clr);
+    flex: 1;
+}
+
+.custom-color-preview .preview{
+    background: var(--customColor);
+    height: 60%;
+    width: 60%;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, .1);
+}
+
+
+/* ----- ----- */
+.custom-color {
+    border-left: 1px dotted var(--border-clr) ;
+    border-right: 1px dotted var(--border-clr);
+    width: 40%;
+    flex: 3;
+
+}
+
+#H, #S, #L, #A {
+    width: 100%;
+}
+
+.ranges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: .4rem;
+}
+
+.ranges input {
+    position: relative;
+}
+
+.ranges label {
+    font-size: .7em;
+    text-align: center;
+}
+
+.ranges label {
+    text-align: center;
+    font-size: .7rem;
+}
+
+.ranges-sub {
+    display: flex;
+}
+
+
+.A-label {
+    left: 50%;
+    text-align: center;
+}
+
+.S, .L, .A {
+    display: flex;
+    flex-direction: column;
+}
+.ranges > label {
+    background-image: linear-gradient(to right, 
+    hsla(0, 100%, 50%) 0%,
+    hsla(30, 100%, 50%) 8%,
+    hsla(60, 100%, 50%) 17%,
+    hsla(90, 100%, 50%) 25%,
+    hsla(120, 100%, 50%) 33%,
+    hsla(150, 100%, 50%) 42%,
+    hsla(180, 100%, 50%) 50%,
+    hsla(210, 100%, 50%) 58%,
+    hsla(240, 100%, 50%) 67%,
+    hsla(270, 100%, 50%) 75%,
+    hsla(300, 100%, 50%) 83%,
+    hsla(330, 100%, 50%) 92%,
+    hsla(360, 100%, 50%) 100%);
+    
+     width: 100%;
+}
+
+/* -----  ----- */
+
+.darkmode-container {
+    flex: 1;
+    border-left: 1px dotted var(--border-clr);
+    display: grid;
+    place-content: center;
+}
+
+.darkmode-container button {
+    padding: 0 .4rem;
+}
+
+/* ----- ----- */
+
+.changes {
+    flex: 1;
+}

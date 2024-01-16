@@ -1,0 +1,64 @@
+.menu-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-right.active {
+    padding: 1rem;
+}
+/* ----- Zoom ----- */
+.zoom-lens {
+    height: 100%;
+    width: 100%;
+}
+.zoom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.zoom-range-span {
+    font-size: .7em;
+}
+
+/* ----- Transform ----- */
+
+.transform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.transform > div {
+    text-align: center;
+    width: 100%;
+}
+
+.transform > div > label {
+    width: 100%;
+    font-size: .7rem;
+}
+
+.transform > div > label > span {
+    font-size: .7rem;
+}
+
+.transform input {
+    width: 100%;
+}
+
+/* ----- Animation ----- */
+.animation-rotate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-rotate button {
+    padding: 0 .4rem;
+}
